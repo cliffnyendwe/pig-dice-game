@@ -73,3 +73,20 @@ h2{
     text-align: center;
     font-size: x-large;
 }
+#container {
+    width: 900px;
+    margin: 50px auto;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .column {
+    margin: 30px auto;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    width: 33.33%;
+    height: 500px;
+    float: left;
+    padding: 100px;
+    text-align: center;
+  }  
