@@ -33,10 +33,10 @@ h2{
     position:relative;
 }
 
-.box .inputbox input{
+.box .styling input{
     color:#004e92;
     /* font-size: large; */
-    margin-bottom:30px;
+    margin-bottom:20px;
     border:none;
     border-bottom:1px solid #004e92;
     outline:none;
@@ -91,5 +91,4 @@ h2{
   }
   .nyendwe{
     text-align: center;
-    color:red;
   }  
