@@ -82,11 +82,14 @@ h2{
   
   .column {
     margin: 30px auto;
-    background-color: #f7f7f7;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #42275a, #734b6d);
     width: 33.33%;
     height: 500px;
     float: left;
     padding: 100px;
     text-align: center;
+  }
+  .nyendwe{
+    text-align: center;
+    color:red;
   }  

@@ -1,4 +1,3 @@
-
 var dice = [1, 2, 3, 4, 5, 6];
 
 var gameOn, playerX, totalScore, target, score;
@@ -35,7 +34,7 @@ function playerNext() {
 }
 
 
-nextGame();
+newGame();
 
 $('#btn-roll').on('click', function () {
 
@@ -71,5 +70,5 @@ $('#btn-hold').on('click', function () {
 
 $('#btn-newGame').click(function (e) {
   e.preventDefault();
-  nextGame();
+  newGame();
 });
