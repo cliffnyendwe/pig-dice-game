@@ -15,5 +15,61 @@ body{
     background:rgba(0,0,0,.8);
     box-sizing:border-box;
     box-shadow:0 15px 25px rgba(0,0,0,.5);
-    border-radius:550px;
+    border-radius:10px;
+}
+
+.box{
+    margin:0 o 30px;;
+    padding:0;
+    color:#004e92;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.box .inputbox{
+    position:relative;
+}
+
+.box .inputbox input{
+    color:#004e92;
+    /* font-size: large; */
+    margin-bottom:30px;
+    border:none;
+    border-bottom:1px solid #004e92;
+    outline:none;
+    background:transparent;
+}
+
+.box .inputbox label{
+    position:relative;
+    padding:10px 0;
+    
+    color:#004e92;
+    pointer-events:none;
+    transition:.5;
+
+}
+
+.box .inputbox input:focus~label{
+    top:-18px;
+    left:0;
+    color:#fff;
+}
+/* 
+.box .inputbox input:focus~input,.boxinput input:valid~label{
+    top:-18px;
+    left:0;
+    color:#fff; */
+#cliff{
+    color:#004e92;
+    text-align: center;
+    padding-top:60px;
+}
+#dice{
+    color:#004e92;
+    text-align: center;
+    font-size: x-large;
 }
