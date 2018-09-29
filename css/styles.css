@@ -129,3 +129,9 @@ h1,h2{
   margin: 0 auto;
   text-align: center;
 }
+#instructions{
+    list-style-type: lower-roman;
+}
+.image{
+    width:35%;
+}

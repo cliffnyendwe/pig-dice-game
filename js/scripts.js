@@ -1,8 +1,8 @@
 var dice = [1, 2, 3, 4, 5, 6];
 
-var gameOn= ["playerX", "totalScore", "target", "score"];
+var gameOn= ["playerX", "summedScore", "target", "score"];
 
-function newGame() {
+function nextGame() {
   gameOn = true;
   totalScore = [0, 0];
   score = [0, 0];
@@ -34,7 +34,7 @@ function playerNext() {
 }
 
 
-newGame();
+nextGame();
 
 $('#btn-roll').on('click', function () {
 
@@ -55,7 +55,7 @@ $('#btn-roll').on('click', function () {
 $('#btn-hold').on('click', function () {
   if (gameOn) {
     totalScore[playerX] += score[playerX];
-    $('#totalScore-' + playerX).text(totalScore[playerX]);
+    $('#summedScore-' + playerX).text(totalScore[playerX]);
 
     if (totalScore[playerX] >= target) {
       gameOn = false;
