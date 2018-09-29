@@ -8,7 +8,7 @@ body{
     left:50%;
     transform:translate(-50%,-50%);
     width:400px;
-    padding:400px;
+    padding:300px;
     background:rgba(0,0,0,.8);
     box-sizing:border-box;
     box-shadow:0 15px 25px rgba(0,0,0,.5);
@@ -20,7 +20,7 @@ body{
     color:#004e92;
     text-align: center;
 }
-h2{
+h1,h2{
     text-align: center;
 }
 .box .inputbox{
@@ -28,7 +28,6 @@ h2{
 }
 .box .styling input{
     color:#004e92;
-    /* font-size: large; */
     margin-bottom:20px;
     border:none;
     border-bottom:1px solid #004e92;
@@ -59,27 +58,6 @@ h2{
     text-align: center;
     font-size: x-large;
 }
-Skip to content
- 
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- @cliffnyendwe Sign out
-0
-0 0 wanyek/pigDice
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights
-pigDice/assets/css/styles.css
-4f4dd41  on Aug 25
-@wanyek wanyek added styling to html file using styles sheet
-    
-115 lines (97 sloc)  1.68 KB
-#player2 {
-  padding: 10px;
-}
-
 #player1 {
   padding: 10px;
 }
@@ -107,16 +85,6 @@ pigDice/assets/css/styles.css
   font-weight: 300;
 }
 
-body {
-  background: #000000;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #000000, #434343);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #000000, #434343);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  font-family: 'Lato', sans-serif;
-}
-
 .column {
   margin: 30px auto;
   background-color: #f7f7f7;
@@ -124,14 +92,13 @@ body {
   width: 33.33%;
   height: 500px;
   float: left;
-  padding: 100px;
+  padding-bottom:30px;
   text-align: center;
 }
-
 #roll {
   font-size: 150px;
   font-weight: 350;
-}
+} 
 
 .runningScores {
   font-size: 100px;
@@ -148,12 +115,12 @@ body {
 }
 
 #btn-roll,#btn-hold {
-  margin-top: -2.5em;
+  margin-top: 30px;
   text-transform: uppercase;
-}
+} 
 
 #btn-newGame {
-  margin-top: 2.5em;
+  margin-top: 30px;
 }
 
 .totalScoreBox {
@@ -162,27 +129,5 @@ body {
   width: 50%;
   height: 20%;
   margin: 0 auto;
-  text-align: center;
-}
-
-.fa-gamepad {
-  font-size: 25px;
-  color: #48181b;
-}
-
-h1 {
-  text-align: center;
-  font-size: 100px;
-  color: #EB345E;
-  font-family: 'Lobster', cursive;
-}
-
-.winState {
-  font-size: 15px;
-  color: #3477b5;
-  font-weight: 900;
-  margin-left: -6em;
-  margin-right: -6em;
-  margin-top: -3em;
   text-align: center;
 }
