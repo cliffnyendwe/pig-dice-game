@@ -1,8 +1,8 @@
 var dice = [1, 2, 3, 4, 5, 6];
 
-var gameOn= ["playerX", "totalScore", "target", "score"];
+var gameOn, playerX, totalScore, target, score;
 
-function nextGame() {
+function newGame() {
   gameOn = true;
   totalScore = [0, 0];
   score = [0, 0];
@@ -66,9 +66,3 @@ $('#btn-hold').on('click', function () {
     }
   }
 })
-
-
-$('#btn-newGame').click(function (e) {
-  e.preventDefault();
-  nextGame();
-});

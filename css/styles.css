@@ -59,27 +59,130 @@ h2{
     text-align: center;
     font-size: x-large;
 }
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ @cliffnyendwe Sign out
+0
+0 0 wanyek/pigDice
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights
+pigDice/assets/css/styles.css
+4f4dd41  on Aug 25
+@wanyek wanyek added styling to html file using styles sheet
+    
+115 lines (97 sloc)  1.68 KB
+#player2 {
+  padding: 10px;
+}
+
+#player1 {
+  padding: 10px;
+}
+
+#roll {
+  padding: 15px;
+  font-size: 18px;
+}
+
+.notPlaying {
+  display: none;
+}
+
 #container {
-    width: 900px;
-    margin: 50px auto;
-    background-color: #f7f7f7;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  }
-  .column {
-    background: linear-gradient(to right, #42275a, #734b6d);
-    width: 33.33%;
-    height: 500px;
-    float: left;
-    text-align: center;
-  }
-  .nyendwe{
-    text-align: center;
-  }
-  .totalScoreBox {
-    background-color: #48181b;
-    color: #fff;
-    width: 50%;
-    height: 20%;
-    margin: 0 auto;
-    text-align: center;
-  }
+  width: 900px;
+  margin: 50px auto;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.players {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-top: 1em;
+  font-weight: 300;
+}
+
+body {
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000000, #434343);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000000, #434343);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Lato', sans-serif;
+}
+
+.column {
+  margin: 30px auto;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  width: 33.33%;
+  height: 500px;
+  float: left;
+  padding: 100px;
+  text-align: center;
+}
+
+#roll {
+  font-size: 150px;
+  font-weight: 350;
+}
+
+.runningScores {
+  font-size: 100px;
+  font-weight: 100;
+}
+
+.totalScores {
+  font-size: 30px;
+}
+
+.titleTotalScores {
+  margin-top: 4em;
+  font-size: 18px;
+}
+
+#btn-roll,#btn-hold {
+  margin-top: -2.5em;
+  text-transform: uppercase;
+}
+
+#btn-newGame {
+  margin-top: 2.5em;
+}
+
+.totalScoreBox {
+  background-color: #48181b;
+  color: #fff;
+  width: 50%;
+  height: 20%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fa-gamepad {
+  font-size: 25px;
+  color: #48181b;
+}
+
+h1 {
+  text-align: center;
+  font-size: 100px;
+  color: #EB345E;
+  font-family: 'Lobster', cursive;
+}
+
+.winState {
+  font-size: 15px;
+  color: #3477b5;
+  font-weight: 900;
+  margin-left: -6em;
+  margin-right: -6em;
+  margin-top: -3em;
+  text-align: center;
+}
