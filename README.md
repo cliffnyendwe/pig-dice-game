@@ -52,7 +52,7 @@ To find me, use: cliffnyendwe2018@gmail.com 0710755176
 Kindly to access code clone the repository.
 
 # Motivation
-To come up with away of making JavaScript concept easy to learn and understood.
+To make it easy for people to understand javascript knowledge and be able to put it into use by coming with games like pig dice game.
 
 # Language used
 HTML CSS JavaScript
