@@ -129,9 +129,10 @@ h1,h2{
   margin: 0 auto;
   text-align: center;
 }
-#instructions{
+li{
     list-style-type: lower-roman;
+    color:#fff;
 }
-.image{
-    width:35%;
+.img{
+    width:100%;
 }
