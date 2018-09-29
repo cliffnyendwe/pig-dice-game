@@ -1,6 +1,6 @@
 var dice = [1, 2, 3, 4, 5, 6];
 
-var gameOn, playerX, totalScore, target, score;
+var gameOn= ["playerX", "totalScore", "target", "score"];
 
 function newGame() {
   gameOn = true;
@@ -10,9 +10,9 @@ function newGame() {
   target = 100;
 
   $('#roll').text('0');
-  $('#runningScore-0').text('0');
-  $('#runningScore-1').text('0');
-  $('#totalScore-0').text('0');
+  $('#currentScore-0').text('0');
+  $('#currentScore-1').text('0');
+  $('#currenScore-0').text('0');
   $('#totalScore-1').text('0');
   $('#player-0 span').removeClass('notPlaying');
   $('#player-1 span').toggleClass('notPlaying', true);
@@ -29,8 +29,8 @@ function playerNext() {
   }
 
   score[playerX] = 0;
-  $('#runningScore-0').text('0');
-  $('#runningScore-1').text('0');
+  $('#currentScore-0').text('0');
+  $('#currentScore-1').text('0');
 }
 
 
@@ -45,7 +45,7 @@ $('#btn-roll').on('click', function () {
 
     if (rolledNumber > 1) {
       score[playerX] += rolledNumber;
-      $('#runningScore-' + playerX).text(score[playerX]);
+      $('#currentScore-' + playerX).text(score[playerX]);
     } else {
       playerNext();
     }

@@ -1,6 +1,6 @@
 body{
     font-family:sans-serif;
-    background: linear-gradient(to right, #f79d00, #64f38c);
+    background: linear-gradient(to right, #eb3349, #f45c43);
 }
 .box{
     position:absolute;
@@ -22,6 +22,7 @@ body{
 }
 h1,h2{
     text-align: center;
+    font-style: italic;
 }
 .box .inputbox{
     position:relative;
@@ -71,10 +72,7 @@ h1,h2{
   display: none;
 }
 
-#container {
-  width: 900px;
-  margin: 50px auto;
-  background-color: #f7f7f7;
+ #container {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -87,7 +85,7 @@ h1,h2{
 
 .column {
   margin: 30px auto;
-  background-color: #f7f7f7;
+  background: linear-gradient(to right, #6d6027, #d3cbb8);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   width: 33.33%;
   height: 500px;
@@ -125,7 +123,7 @@ h1,h2{
 
 .totalScoreBox {
   background-color: #48181b;
-  color: #fff;
+  color: blue;
   width: 50%;
   height: 20%;
   margin: 0 auto;
