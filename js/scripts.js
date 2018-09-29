@@ -9,6 +9,9 @@ function nextGame() {
   playerX = 0;
   target = 100;
 
+$(".submit").click(function(event){
+    event.preventDefault();
+});
   $('#roll').text('0');
   $('#currentScore-0').text('0');
   $('#currentScore-1').text('0');
