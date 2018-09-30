@@ -110,14 +110,13 @@ h1,h2{
   margin: 0 auto;
   text-align: center;
 }
-li{
-    list-style-type: lower-roman;
-    color:maroon;
-}
 .proceed{
   padding-top:40%;
   padding-left:43%;
 }
 .play{
-  padding-bottom:40%;
+  padding-bottom:20%;
+}
+li{
+  font-size:large;
 }
