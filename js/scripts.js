@@ -1,71 +1,64 @@
 var dice = [1, 2, 3, 4, 5, 6];
 
-var gameOn= ["playerX", "summedScore", "target", "score"];
+var gameOn= ["playerZ", "summedScore", "target", "score"];
 
 function nextGame() {
   gameOn = true;
   totalScore = [0, 0];
   score = [0, 0];
-  playerX = 0;
+  playerZ = 0;
   target = 100;
 
 $(".submit").click(function(event){
     event.preventDefault();
 });
-  $('#roll').text('0');
-  // $('#currentScore-0').text('0');
-  // $('#currentScore-1').text('0');
-  // $('#currenScore-0').text('0');
-  // $('#totalScore-1').text('0');
-  // $('#player-0 span').removeClass('notPlaying');
-  // $('#player-1 span').toggleClass('notPlaying', true);
-  // $('.winState').text('');
+  $("#roll").text("0");
 }
 
 function playerNext() {
-  $('span').toggleClass('notPlaying');
+  $("span").toggleClass("notPlaying");
 
-  if (playerX === 0) {
-    playerX = 1
+  if (playerZ === 0) {
+    playerZ = 1
   } else {
-    playerX = 0
+    playerZ = 0
   }
 
-  score[playerX] = 0;
-  $('#currentScore-0').text('0');
-  $('#currentScore-1').text('0');
+  score[playerZ] = 0;
+  $("#currentScore-0").text("0");
+  $("#currentScore-1").text("0");
 }
 
 
 nextGame();
 
-$('#btn-roll').on('click', function () {
+$("#btn-roll").on("click", function () {
 
   if (gameOn) {
     var rolledNumber = dice[Math.floor(Math.random() * dice.length)];
     console.log(rolledNumber);
-    $('#roll').text(rolledNumber);
+    $("#roll").text(rolledNumber);
 
     if (rolledNumber > 1) {
-      score[playerX] += rolledNumber;
-      $('#currentScore-' + playerX).text(score[playerX]);
+      score[playerZ] += rolledNumber;
+      $("#currentScore-" + playerZ).text(score[playerZ]);
     } else {
       playerNext();
     }
   }
 });
 
-$('#btn-hold').on('click', function () {
+$("#btn-hold").on("click", function () {
   if (gameOn) {
-    totalScore[playerX] += score[playerX];
-    $('#summedScore-' + playerX).text(totalScore[playerX]);
+    totalScore[playerZ] += score[playerZ];
+    $("#summedScore-" + playerZ).text(totalScore[playerZ]);
 
-    if (totalScore[playerX] >= target) {
+    if (totalScore[playerZ] >= target) {
       gameOn = false;
-      $('.winState').text('PLAYER ' + (playerX + 1) + ' WINS !!! GAME OVER.');
+      $(".winState").text("PLAYER " + (playerZ + 1) + " WINS !!! GAME OVER.");
     } else {
       playerNext();
-      $('#roll').text('0');
+      $("#roll").text('0');
     }
   }
 })

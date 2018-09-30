@@ -12,7 +12,7 @@ body{
     background:rgba(0,0,0,.8);
     box-sizing:border-box;
     box-shadow: rgba(0,0,0,.5);
-    border-radius:10px;
+    border-radius:20px;
 }
 .box{
     margin:0 30px;
@@ -115,8 +115,9 @@ h1,h2{
   padding-left:43%;
 }
 .play{
-  padding-bottom:20%;
+padding-top:10%;
+padding-left:37%;
 }
-li{
-  font-size:large;
+p{
+  font-size:x-large;
 }
