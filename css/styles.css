@@ -75,7 +75,7 @@ h1,h2{
   background: linear-gradient(to right, #6d6027, #d3cbb8);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   width: 33.33%;
-  height: 450px;
+  height: 400px;
   float: left;
   padding-bottom:30px;
   text-align: center;
@@ -99,7 +99,6 @@ h1,h2{
   margin-top: 30px;
   text-transform: uppercase;
 } 
-
 #btn-newGame {
   margin-top: 30px;
 }
@@ -113,12 +112,12 @@ h1,h2{
 }
 li{
     list-style-type: lower-roman;
-    color:#fff;
-}
-.img{
-    width:100%;
+    color:maroon;
 }
 .proceed{
   padding-top:40%;
   padding-left:43%;
+}
+.play{
+  padding-bottom:40%;
 }
