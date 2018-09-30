@@ -13,7 +13,16 @@ $(".submit").click(function(event){
     event.preventDefault();
 });
   $('#roll').text('0');
-  function playerNext() {
+  // $('#currentScore-0').text('0');
+  // $('#currentScore-1').text('0');
+  // $('#currenScore-0').text('0');
+  // $('#totalScore-1').text('0');
+  // $('#player-0 span').removeClass('notPlaying');
+  // $('#player-1 span').toggleClass('notPlaying', true);
+  // $('.winState').text('');
+}
+
+function playerNext() {
   $('span').toggleClass('notPlaying');
 
   if (playerX === 0) {
@@ -59,4 +68,4 @@ $('#btn-hold').on('click', function () {
       $('#roll').text('0');
     }
   }
-});
+})
