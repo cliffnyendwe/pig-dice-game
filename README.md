@@ -7,7 +7,7 @@ The application works as follows:
 
 It can generate a random number between 1-6(Numbers on sides of a dice)
 
-* Example Input : User taps ROLL button
+* Example Input : User taps roll button
 * Example Output: 5 (Number 5 is randomly generated)
 * The random number generated once the user ROLLs die is added to their turn total.
 
