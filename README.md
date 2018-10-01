@@ -13,7 +13,7 @@ It can generate a random number between 1-6(Numbers on sides of a dice)
 
 * Example Input : 5 (Number from spec one)
 * Example Output: 5 (0 + 5)
-* The turn total continues to increase as the user continues ROLLing the die.
+* The turn total continues to increase as the user continues rolling the die.
 
 * Example Input: 6 (Number generated after user taps rolls dies again)
 * Example Output: 11 (5+6)
@@ -21,25 +21,25 @@ It can generate a random number between 1-6(Numbers on sides of a dice)
 
 * Example Input : 1 (User rolls 1)
 * Example Output: 0 (11*0)
-* It becomes the next player's turn if the current user ROLLs a 1.
+* It becomes the next player's turn if the current user rolls a 1.
 
-* Example Input : Player 1 (Player One's turn before they rolls a one)
-* Example Output: Player 2 (Player Two's turn after Player One rolls a one)
-* It becomes the next player's turn if they decide to HOLD.
+* Example Input : Player One (Player One's turn before they rolls a one)
+* Example Output: Player Two (Player Two's turn after Player One rolls a one)
+* It becomes the next player's turn if they decide to hold.
 
-* Example Input : Player 2 taps HOLD during their turn
-* Example Output: Player 1 (It's now player one's turn)
+* Example Input : Player Two taps HOLD during their turn
+* Example Output: Player One (It's now player one's turn)
 * It adds the current players turn total to their total score if they tap HOLD
 
-* Example Input: Total Score = 0 Turn Total = 20 (Total Score and Turn Total before HOLDing)
-* Example Output: Total Score = 20 Turn Total = 0 (Total Score and Turn Total after HOLDing)
+* Example Input: Total Score = 0 Turn Total = 20 (Total Score and Turn Total before holdig)
+* Example Output: Total Score = 20 Turn Total = 0 (Total Score and Turn Total after holding)
 * When either player's total Score reaches 100, game is stopped and the winner is announced
 
-* Example Input : Player 2's Total Score = 100
-* Example Output: Player 2 Wins !!! Game Over
+* Example Input : Player Two's Total Score = 100
+* Example Output: Player Two CONGRATS,YOU WIN.
 * A new round of Pig Dice is started when either user taps NEW GAME, all scores are reset
 
-* Example Input : tap NEW GAME
+* Example Input : tap NEXT GAME
 * Example Output: Scores Reset, New Gam
 
 # Github-link

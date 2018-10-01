@@ -57,5 +57,9 @@ $("#btn-hold").on("click", function () {
       $("#roll").text('0');
     }
   }
+  $('#btn-newGame').click(function (event) {
+  event.preventDefault();
+  nextGame();
+  });
 })
 
