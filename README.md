@@ -63,6 +63,6 @@ The project is under license by MIT
 # Prerequisites
 You will need the following things properly installed on your computer.
 
-atom
-git
-github
+* atom
+* git
+* github
