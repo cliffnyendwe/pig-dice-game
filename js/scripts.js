@@ -28,7 +28,6 @@ function playerNext() {
 }
 
 nextGame();
-
 $("#btn-roll").on("click", function () {
 
   if (gameOn) {
