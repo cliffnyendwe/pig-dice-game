@@ -16,8 +16,6 @@ $(".submit").click(function(event){
 }
 
 function playerNext() {
-  $("span").toggleClass("notPlaying");
-
   if (playerZ === 0) {
     playerZ = 1
   } else {
@@ -29,7 +27,6 @@ function playerNext() {
   $("#currentScore-1").text("0");
 }
 
-
 nextGame();
 
 $("#btn-roll").on("click", function () {
@@ -38,7 +35,6 @@ $("#btn-roll").on("click", function () {
     var rolledNumber = dice[Math.floor(Math.random() * dice.length)];
     console.log(rolledNumber);
     $("#roll").text(rolledNumber);
-
     if (rolledNumber > 1) {
       score[playerZ] += rolledNumber;
       $("#currentScore-" + playerZ).text(score[playerZ]);
@@ -55,7 +51,7 @@ $("#btn-hold").on("click", function () {
 
     if (totalScore[playerZ] >= target) {
       gameOn = false;
-      $(".winState").text("PLAYER " + (playerZ + 1) + " WINS !!! GAME OVER.");
+      $(".win").text("PLAYER " + (playerZ + 1) + " WINS !!! GAME OVER.");
     } else {
       playerNext();
       $("#roll").text('0');
@@ -63,7 +59,3 @@ $("#btn-hold").on("click", function () {
   }
 })
 
-$('#btn-nextGame').click(function (e) {
-  e.preventDefault();
-  nextGame();
-})
