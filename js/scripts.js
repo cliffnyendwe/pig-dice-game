@@ -63,7 +63,7 @@ $("#btn-hold").on("click", function () {
   }
 })
 
-$('#btn-newGame').click(function (e) {
+$('#btn-nextGame').click(function (e) {
   e.preventDefault();
-  newGame();
+  nextGame();
 })
